@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Discovered Vulnerabilities - Andrew Orr</title>
+  <meta name="description" content="Discovered Vulnerabilities - The public ones.">
+  <meta name="author" content="Andrew Orr">
+  <meta name="theme-color" content="#0a0e1a">
+
+  <!-- OpenGraph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Discovered Vulnerabilities - Andrew Orr">
+  <meta property="og:description" content="The public ones.">
+  <meta property="og:url" content="https://andreworr.ca/vulnerabilities.html">
+  <meta property="og:site_name" content="andreworr.ca">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Discovered Vulnerabilities - Andrew Orr">
+  <meta name="twitter:description" content="The public ones.">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>»</text></svg>">
+  <link rel="canonical" href="https://andreworr.ca/vulnerabilities.html">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Discovered Vulnerabilities by Andrew Orr",
+    "description": "CVE disclosures and vulnerability discoveries.",
+    "url": "https://andreworr.ca/vulnerabilities.html",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "CreativeWork",
+          "name": "Cisco SPA100 Series - 18 Vulnerabilities",
+          "description": "18 vulnerabilities in Cisco SPA100 IP phones including remote code execution, authentication bypass, XSS, and arbitrary file disclosure.",
+          "author": { "@type": "Person", "name": "Andrew Orr" },
+          "url": "https://www.tenable.com/security/research/tra-2019-44"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "CreativeWork",
+          "name": "ASUSTOR Data Master - 6 Vulnerabilities",
+          "description": "6 vulnerabilities in ASUSTOR NAS devices including file upload RCE, path traversal, account enumeration, and man-in-the-middle XSS.",
+          "author": { "@type": "Person", "name": "Andrew Orr" },
+          "url": "https://www.tenable.com/security/research/tra-2018-22"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "CreativeWork",
+          "name": "IBM Netezza - Local Privilege Escalation",
+          "description": "Local privilege escalation to root via world-writable setuid binary in IBM Netezza Platform Software.",
+          "author": { "@type": "Person", "name": "Andrew Orr" },
+          "url": "https://www.tenable.com/security/research/tra-2018-13"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "CreativeWork",
+          "name": "Firebird Database - Authenticated Remote Code Execution",
+          "description": "Authenticated RCE via malicious user-defined functions in Firebird database server, achieving SYSTEM-level code execution.",
+          "author": { "@type": "Person", "name": "Andrew Orr" },
+          "url": "https://www.tenable.com/security/research/tra-2017-36"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__inner">
+      <a href="/" class="sidebar__name">andreworr.ca</a>
+      <nav class="sidebar__nav" aria-label="Main navigation">
+        <a href="/security.html" class="sidebar__link">Security & Community</a>
+        <a href="/software.html" class="sidebar__link">Software Engineering</a>
+        <a href="/vulnerabilities.html" class="sidebar__link">Discovered Vulnerabilities</a>
+      </nav>
+      <div class="sidebar__footer">
+        <div class="sidebar__contact">
+          <a href="https://github.com/xorrbit" class="sidebar__contact-link">GitHub</a>
+          <a href="https://ca.linkedin.com/in/xorrbit" class="sidebar__contact-link">LinkedIn</a>
+          <a href="mailto:andrew@andreworr.ca" class="sidebar__contact-link">andrew@andreworr.ca</a>
+        </div>
+        <div class="sidebar__meta">
+          <a href="/humans.txt" class="sidebar__meta-link">humans.txt</a>
+          <a href="/llms.txt" class="sidebar__meta-link">llms.txt</a>
+          <span class="sidebar__copy">&copy; 2026 Andrew Orr</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="site-content">
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1 class="page-header__title">Discovered Vulnerabilities</h1>
+          <p class="page-header__desc">
+            The public ones.
+          </p>
+        </div>
+      </section>
+
+      <section class="projects">
+        <div class="container">
+          <div class="project-list">
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h2 class="project-card__title">
+                  <a href="https://www.tenable.com/security/research/tra-2019-44" target="_blank" rel="noopener noreferrer">Cisco SPA100 Series - 18 Vulnerabilities</a>
+                </h2>
+              </div>
+              <p class="project-card__desc">
+                Discovered 18 vulnerabilities in Cisco SPA100 IP phones including multiple
+                stack and heap buffer overflows for remote code execution, admin password
+                hash extraction, plaintext credential leakage, stored and reflected XSS,
+                and arbitrary file disclosure. CVE-2019-15240 through CVE-2019-15258.
+                Co-researched with <a href="https://broot.ca" target="_blank" rel="noopener noreferrer">Alex Weber</a>.
+              </p>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h2 class="project-card__title">
+                  <a href="https://www.tenable.com/security/research/tra-2018-22" target="_blank" rel="noopener noreferrer">ASUSTOR Data Master - 6 Vulnerabilities</a>
+                </h2>
+              </div>
+              <p class="project-card__desc">
+                Found 6 vulnerabilities in ASUSTOR NAS devices running ADM 3.1.5 and below.
+                Authenticated file upload leading to remote code execution, arbitrary file
+                deletion via path traversal, account enumeration, file disclosure for both
+                user and admin roles, and a man-in-the-middle XSS via update checks.
+                CVE-2018-15694 through CVE-2018-15699.
+              </p>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h2 class="project-card__title">
+                  <a href="https://www.tenable.com/security/research/tra-2018-13" target="_blank" rel="noopener noreferrer">IBM Netezza - Local Privilege Escalation</a>
+                </h2>
+              </div>
+              <p class="project-card__desc">
+                Local privilege escalation to root in IBM Netezza Platform Software.
+                A setuid root binary executed a Perl script from a world-writable directory,
+                allowing unprivileged users to inject code and gain root access.
+                CVE-2018-1460.
+              </p>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h2 class="project-card__title">
+                  <a href="https://www.tenable.com/security/research/tra-2017-36" target="_blank" rel="noopener noreferrer">Firebird Database - Authenticated Remote Code Execution</a>
+                </h2>
+              </div>
+              <p class="project-card__desc">
+                Authenticated RCE in Firebird database server. By declaring external
+                user-defined functions with incompatible parameter types, an attacker could
+                overwrite function pointers and achieve SYSTEM-level code execution.
+                CVE-2017-11509.
+              </p>
+            </article>
+
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

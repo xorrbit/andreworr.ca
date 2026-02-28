@@ -1,0 +1,48 @@
+# Andrew Orr
+
+> Vulnerability research and software engineering. I break things and build things.
+
+## Pages
+
+- [Security & Community](https://andreworr.ca/security.html): Security work, community contributions, CTFs
+- [Software Engineering](https://andreworr.ca/software.html): Things I've built
+- [Discovered Vulnerabilities](https://andreworr.ca/vulnerabilities.html): The public ones
+
+## Security & Community
+
+- [Tenable - Staff Vulnerability Research Engineer](https://www.tenable.com/research): Vulnerability research and exploit development since 2013
+- [SkullSpace - Hackerspace Founder](https://skullspace.ca): Founded Winnipeg's first hackerspace
+- [Nmap: the Network Mapper](https://nmap.org): DOUBLEPULSAR detection, Intel AMT auth bypass, Misfortune Cookie, afp-serverinfo, bitcoin.lua
+- [Burp Suite - SendToCyberChef](https://github.com/xorrbit/Burp-SendToCyberChef): Burp extension to send selections to CyberChef
+- [Burp Suite - NessusLoader](https://github.com/xorrbit/Burp-NessusLoader): Burp extension to import Nessus web servers
+
+## Software Engineering
+
+- [Claude Did What?!](https://github.com/xorrbit/claudedidwhat): Terminal with built-in live diff viewer for AI coding agents (TypeScript)
+- Callout Alert: React Native alarm app for volunteer firefighters and SAR responders (TypeScript)
+- PlumbWildVulns: CVE prioritization dashboard combining CISA KEV, CVSS, and custom watchlists (TypeScript)
+- [andreworr.ca](https://github.com/xorrbit/andreworr.ca): This site (HTML, CSS, JS)
+
+## Discovered Vulnerabilities
+
+- [Cisco SPA100 Series - 18 Vulnerabilities](https://www.tenable.com/security/research/tra-2019-44): RCE, auth bypass, XSS, file disclosure (CVE-2019-15240 through CVE-2019-15258)
+- [ASUSTOR Data Master - 6 Vulnerabilities](https://www.tenable.com/security/research/tra-2018-22): RCE, path traversal, account enumeration, XSS (CVE-2018-15694 through CVE-2018-15699)
+- [IBM Netezza - Local Privilege Escalation](https://www.tenable.com/security/research/tra-2018-13): Root via world-writable setuid binary (CVE-2018-1460)
+- [Firebird Database - Authenticated RCE](https://www.tenable.com/security/research/tra-2017-36): SYSTEM-level code execution via malicious UDFs (CVE-2017-11509)
+
+## CTF Competitions
+
+- [PancakesCon 2022 CTF - 1st Place](https://pancakescon.com/2022/01/16/thank-you-for-a-successful-2022-pancakescon/)
+- [Ghost in the Shellcode 2015 - 32nd / 321](https://ctftime.org/event/165)
+- [PlaidCTF 2014 - 39th / 867](https://ctftime.org/event/119)
+- [Ghost in the Shellcode 2014 - 20th / 300](https://ctftime.org/event/118)
+- [PlaidCTF 2013 - 29th / 293](https://ctftime.org/event/64)
+- [Ghost in the Shellcode 2013 - 37th / 126](https://ctftime.org/event/59)
+- [PoliCTF 2012 - 11th / 93](https://ctftime.org/event/50)
+- [SANS Holiday Forensics Challenge 2010 - Technical Winner](https://web.archive.org/web/20130801020219/https://www.ethicalhacker.net/features/skillz/the-nightmare-before-charlie-browns-christmas-answers-and-winners)
+
+## Contact
+
+- Email: andrew@andreworr.ca
+- GitHub: https://github.com/xorrbit
+- LinkedIn: https://ca.linkedin.com/in/xorrbit

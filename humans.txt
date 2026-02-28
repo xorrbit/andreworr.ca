@@ -1,0 +1,13 @@
+/* TEAM */
+Name: Andrew Orr
+Role: Vulnerability Research & Software Engineering
+Site: https://andreworr.ca
+Contact: andrew@andreworr.ca
+GitHub: https://github.com/xorrbit
+Location: Canada
+
+/* SITE */
+Last update: 2026-02-28
+Standards: HTML5, CSS3, ES6
+Software: Hand-coded, no frameworks
+Hosting: GitHub Pages

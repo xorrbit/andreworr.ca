@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Software Engineering - Andrew Orr</title>
+  <meta name="description" content="Software Engineering - Things I've built.">
+  <meta name="author" content="Andrew Orr">
+  <meta name="theme-color" content="#0a0e1a">
+
+  <!-- OpenGraph -->
+  <meta property="og:type" content="website">
+  <meta property="og:title" content="Software Engineering - Andrew Orr">
+  <meta property="og:description" content="Things I've built.">
+  <meta property="og:url" content="https://andreworr.ca/software.html">
+  <meta property="og:site_name" content="andreworr.ca">
+
+  <!-- Twitter Card -->
+  <meta name="twitter:card" content="summary">
+  <meta name="twitter:title" content="Software Engineering - Andrew Orr">
+  <meta name="twitter:description" content="Things I've built.">
+
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>»</text></svg>">
+  <link rel="canonical" href="https://andreworr.ca/software.html">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- JSON-LD Structured Data -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "ItemList",
+    "name": "Software Projects by Andrew Orr",
+    "description": "Things I've built.",
+    "url": "https://andreworr.ca/software.html",
+    "itemListElement": [
+      {
+        "@type": "ListItem",
+        "position": 1,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "Claude Did What?!",
+          "description": "A terminal with a built-in live diff viewer for AI coding agents. Split-pane layout with real-time git diff, Monaco-powered syntax highlighting, and multi-tab support.",
+          "author": { "@type": "Person", "name": "Andrew Orr" },
+          "programmingLanguage": ["TypeScript"],
+          "codeRepository": "https://github.com/xorrbit/claudedidwhat"
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 2,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "Callout Alert",
+          "description": "A React Native phone app that fires a loud alarm overriding silent and Do Not Disturb settings, ensuring volunteer firefighters and search & rescue responders never miss a callout.",
+          "author": { "@type": "Person", "name": "Andrew Orr" },
+          "programmingLanguage": ["TypeScript"]
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 3,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "PlumbWildVulns",
+          "description": "A CVE prioritization dashboard combining CISA KEV, CVSS scores, and custom product watchlists. SQLite-backed, runs locally, cross-platform builds.",
+          "author": { "@type": "Person", "name": "Andrew Orr" },
+          "programmingLanguage": ["TypeScript"]
+        }
+      },
+      {
+        "@type": "ListItem",
+        "position": 4,
+        "item": {
+          "@type": "SoftwareSourceCode",
+          "name": "andreworr.ca",
+          "description": "Meta. Static HTML/CSS/JS with structured data for AI agents and search engines.",
+          "author": { "@type": "Person", "name": "Andrew Orr" },
+          "programmingLanguage": ["HTML", "CSS", "JavaScript"],
+          "codeRepository": "https://github.com/xorrbit/andreworr.ca"
+        }
+      }
+    ]
+  }
+  </script>
+</head>
+<body>
+
+  <aside class="sidebar" id="sidebar">
+    <div class="sidebar__inner">
+      <a href="/" class="sidebar__name">andreworr.ca</a>
+      <nav class="sidebar__nav" aria-label="Main navigation">
+        <a href="/security.html" class="sidebar__link">Security & Community</a>
+        <a href="/software.html" class="sidebar__link">Software Engineering</a>
+        <a href="/vulnerabilities.html" class="sidebar__link">Discovered Vulnerabilities</a>
+      </nav>
+      <div class="sidebar__footer">
+        <div class="sidebar__contact">
+          <a href="https://github.com/xorrbit" class="sidebar__contact-link">GitHub</a>
+          <a href="https://ca.linkedin.com/in/xorrbit" class="sidebar__contact-link">LinkedIn</a>
+          <a href="mailto:andrew@andreworr.ca" class="sidebar__contact-link">andrew@andreworr.ca</a>
+        </div>
+        <div class="sidebar__meta">
+          <a href="/humans.txt" class="sidebar__meta-link">humans.txt</a>
+          <a href="/llms.txt" class="sidebar__meta-link">llms.txt</a>
+          <span class="sidebar__copy">&copy; 2026 Andrew Orr</span>
+        </div>
+      </div>
+    </div>
+  </aside>
+
+  <div class="sidebar-overlay" id="sidebar-overlay"></div>
+  <button class="sidebar-toggle" id="sidebar-toggle" aria-label="Toggle navigation">
+    <span></span><span></span><span></span>
+  </button>
+
+  <div class="site-content">
+    <main>
+      <section class="page-header">
+        <div class="container">
+          <h1 class="page-header__title">Software Engineering</h1>
+          <p class="page-header__desc">
+            Things I've built.
+          </p>
+        </div>
+      </section>
+
+      <section class="projects">
+        <div class="container">
+          <div class="project-list">
+
+            <article class="project-card project-card--no-link">
+              <div class="project-card__top">
+                <h2 class="project-card__title">
+                  Claude Did What?!
+                </h2>
+              </div>
+              <p class="project-card__desc">
+                A terminal with a built-in live diff viewer for AI coding agents. Split-pane
+                layout with real-time git diff, Monaco-powered syntax highlighting, multi-tab
+                support with AI activity detection, and cross-platform builds. Built for the
+                workflow where you never leave the terminal.
+                <a href="https://github.com/xorrbit/claudedidwhat" target="_blank" rel="noopener noreferrer">Open source, MIT licensed, PRs welcome</a>.
+              </p>
+            </article>
+
+            <article class="project-card project-card--no-link">
+              <div class="project-card__top">
+                <h2 class="project-card__title">
+                  Callout Alert
+                </h2>
+              </div>
+              <p class="project-card__desc">
+                A React Native phone app that monitors incoming SMS and fires a loud, full-screen
+                alarm that overrides silent and Do Not Disturb settings - ensuring volunteer
+                firefighters and search &amp; rescue responders never miss a callout.
+                <a href="https://medium.com/@hitarthchudgar/personal-software-what-it-means-to-build-for-yourself-others-e7fd8f106944" target="_blank" rel="noopener noreferrer">Personal software</a>.
+              </p>
+            </article>
+
+            <article class="project-card project-card--no-link">
+              <div class="project-card__top">
+                <h2 class="project-card__title">PlumbWildVulns</h2>
+              </div>
+              <p class="project-card__desc">
+                A CVE prioritization dashboard that combines CISA's Known Exploited
+                Vulnerabilities catalog, CVSS severity scores, and custom product watchlists
+                to cut through the noise. Dark theme, keyboard-friendly, handles thousands of
+                CVEs without lag. SQLite-backed, runs entirely locally, with cross-platform
+                builds for Linux, macOS, and Windows. <a href="https://medium.com/@hitarthchudgar/personal-software-what-it-means-to-build-for-yourself-others-e7fd8f106944" target="_blank" rel="noopener noreferrer">Personal software</a>.
+              </p>
+            </article>
+
+            <article class="project-card project-card--no-link">
+              <div class="project-card__top">
+                <h2 class="project-card__title">
+                  andreworr.ca
+                </h2>
+              </div>
+              <p class="project-card__desc">
+                Meta. Static HTML/CSS/JS with structured data for AI agents
+                and search engines - JSON-LD, llms.txt, sitemap, and robots.txt.
+                <a href="https://github.com/xorrbit/andreworr.ca" target="_blank" rel="noopener noreferrer">On GitHub</a>.
+              </p>
+            </article>
+
+          </div>
+        </div>
+      </section>
+    </main>
+  </div>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
