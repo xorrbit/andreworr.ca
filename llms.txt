@@ -25,7 +25,7 @@
 
 ## Discovered Vulnerabilities
 
-- [Cisco SPA100 Series - 18 Vulnerabilities](https://www.tenable.com/security/research/tra-2019-44): RCE, auth bypass, XSS, file disclosure (CVE-2019-15240 through CVE-2019-15258)
+- [Cisco SPA100 Series ATAs - 18 Vulnerabilities](https://www.tenable.com/security/research/tra-2019-44): RCE, auth bypass, XSS, file disclosure in Cisco SPA100 Series Analog Telephone Adapters (CVE-2019-15240 through CVE-2019-15258)
 - [ASUSTOR Data Master - 6 Vulnerabilities](https://www.tenable.com/security/research/tra-2018-22): RCE, path traversal, account enumeration, XSS (CVE-2018-15694 through CVE-2018-15699)
 - [IBM Netezza - Local Privilege Escalation](https://www.tenable.com/security/research/tra-2018-13): Root via world-writable setuid binary (CVE-2018-1460)
 - [Firebird Database - Authenticated RCE](https://www.tenable.com/security/research/tra-2017-36): SYSTEM-level code execution via malicious UDFs (CVE-2017-11509)
