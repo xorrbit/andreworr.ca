@@ -28,64 +28,95 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Security & Community by Andrew Orr",
-    "description": "Security work, community contributions, CTFs.",
-    "url": "https://andreworr.ca/security.html",
-    "itemListElement": [
+    "@graph": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "item": {
-          "@type": "CreativeWork",
-          "name": "Tenable - Staff Vulnerability Research Engineer",
-          "description": "Vulnerability research and exploit development at Tenable since 2013.",
-          "author": { "@type": "Person", "name": "Andrew Orr" },
-          "url": "https://www.tenable.com/research"
-        }
+        "@type": "CollectionPage",
+        "@id": "https://andreworr.ca/security.html",
+        "name": "Security & Community",
+        "description": "Security work, community contributions, CTFs.",
+        "url": "https://andreworr.ca/security.html",
+        "isPartOf": { "@id": "https://andreworr.ca/#website" },
+        "author": { "@id": "https://andreworr.ca/#person" }
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "item": {
-          "@type": "CreativeWork",
-          "name": "SkullSpace - Hackerspace Founder",
-          "description": "Founded SkullSpace, Winnipeg's first hackerspace. Community workshop for hardware hacking, security research, and collaborative projects.",
-          "author": { "@type": "Person", "name": "Andrew Orr" },
-          "url": "https://skullspace.ca"
-        }
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://andreworr.ca/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Security & Community",
+            "item": "https://andreworr.ca/security.html"
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 3,
-        "item": {
-          "@type": "CreativeWork",
-          "name": "Nmap: the Network Mapper",
-          "description": "Open source contributions including DOUBLEPULSAR backdoor detection, Intel AMT auth bypass, Misfortune Cookie check, afp-serverinfo, and bitcoin.lua.",
-          "author": { "@type": "Person", "name": "Andrew Orr" },
-          "url": "https://nmap.org"
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "item": {
-          "@type": "CreativeWork",
-          "name": "Burp Suite Professional",
-          "description": "Two Burp Suite extensions: SendToCyberChef and NessusLoader.",
-          "author": { "@type": "Person", "name": "Andrew Orr" },
-          "url": "https://github.com/xorrbit/Burp-SendToCyberChef"
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 5,
-        "item": {
-          "@type": "CreativeWork",
-          "name": "CTF Competitions",
-          "description": "PancakesCon 2022 1st place, Ghost in the Shellcode, PlaidCTF, PoliCTF, SANS Holiday Forensics Challenge 2010 Technical Winner.",
-          "author": { "@type": "Person", "name": "Andrew Orr" }
-        }
+        "@type": "ItemList",
+        "name": "Security & Community by Andrew Orr",
+        "description": "Security work, community contributions, CTFs.",
+        "url": "https://andreworr.ca/security.html",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Tenable - Staff Vulnerability Research Engineer",
+              "description": "Vulnerability research and exploit development at Tenable since 2013.",
+              "author": { "@id": "https://andreworr.ca/#person" },
+              "url": "https://www.tenable.com/research"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "Organization",
+              "name": "SkullSpace",
+              "description": "Winnipeg's first hackerspace. Community workshop for hardware hacking, security research, and collaborative projects.",
+              "url": "https://skullspace.ca",
+              "founder": { "@id": "https://andreworr.ca/#person" }
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "Nmap: the Network Mapper",
+              "description": "Open source contributions including DOUBLEPULSAR backdoor detection, Intel AMT auth bypass, Misfortune Cookie check, afp-serverinfo, and bitcoin.lua.",
+              "author": { "@id": "https://andreworr.ca/#person" },
+              "url": "https://nmap.org",
+              "programmingLanguage": ["Lua"]
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "SoftwareSourceCode",
+              "name": "Burp Suite Professional Extensions",
+              "description": "Two Burp Suite extensions: SendToCyberChef and NessusLoader.",
+              "author": { "@id": "https://andreworr.ca/#person" },
+              "codeRepository": "https://github.com/xorrbit/Burp-SendToCyberChef"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 5,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "CTF Competitions",
+              "description": "PancakesCon 2022 1st place, Ghost in the Shellcode, PlaidCTF, PoliCTF, SANS Holiday Forensics Challenge 2010 Technical Winner.",
+              "author": { "@id": "https://andreworr.ca/#person" }
+            }
+          }
+        ]
       }
     ]
   }

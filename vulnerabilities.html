@@ -28,54 +28,84 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "ItemList",
-    "name": "Discovered Vulnerabilities by Andrew Orr",
-    "description": "CVE disclosures and vulnerability discoveries.",
-    "url": "https://andreworr.ca/vulnerabilities.html",
-    "itemListElement": [
+    "@graph": [
       {
-        "@type": "ListItem",
-        "position": 1,
-        "item": {
-          "@type": "CreativeWork",
-          "name": "Cisco SPA100 Series ATAs - 18 Vulnerabilities",
-          "description": "18 vulnerabilities in Cisco SPA100 Series Analog Telephone Adapters (ATAs) including remote code execution, authentication bypass, XSS, and arbitrary file disclosure.",
-          "author": { "@type": "Person", "name": "Andrew Orr" },
-          "url": "https://www.tenable.com/security/research/tra-2019-44"
-        }
+        "@type": "CollectionPage",
+        "@id": "https://andreworr.ca/vulnerabilities.html",
+        "name": "Discovered Vulnerabilities",
+        "description": "CVE disclosures and vulnerability discoveries.",
+        "url": "https://andreworr.ca/vulnerabilities.html",
+        "isPartOf": { "@id": "https://andreworr.ca/#website" },
+        "author": { "@id": "https://andreworr.ca/#person" }
       },
       {
-        "@type": "ListItem",
-        "position": 2,
-        "item": {
-          "@type": "CreativeWork",
-          "name": "ASUSTOR Data Master - 6 Vulnerabilities",
-          "description": "6 vulnerabilities in ASUSTOR NAS devices including file upload RCE, path traversal, account enumeration, and man-in-the-middle XSS.",
-          "author": { "@type": "Person", "name": "Andrew Orr" },
-          "url": "https://www.tenable.com/security/research/tra-2018-22"
-        }
+        "@type": "BreadcrumbList",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "name": "Home",
+            "item": "https://andreworr.ca/"
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "name": "Discovered Vulnerabilities",
+            "item": "https://andreworr.ca/vulnerabilities.html"
+          }
+        ]
       },
       {
-        "@type": "ListItem",
-        "position": 3,
-        "item": {
-          "@type": "CreativeWork",
-          "name": "IBM Netezza - Local Privilege Escalation",
-          "description": "Local privilege escalation to root via world-writable setuid binary in IBM Netezza Platform Software.",
-          "author": { "@type": "Person", "name": "Andrew Orr" },
-          "url": "https://www.tenable.com/security/research/tra-2018-13"
-        }
-      },
-      {
-        "@type": "ListItem",
-        "position": 4,
-        "item": {
-          "@type": "CreativeWork",
-          "name": "Firebird Database - Authenticated Remote Code Execution",
-          "description": "Authenticated RCE via malicious user-defined functions in Firebird database server, achieving SYSTEM-level code execution.",
-          "author": { "@type": "Person", "name": "Andrew Orr" },
-          "url": "https://www.tenable.com/security/research/tra-2017-36"
-        }
+        "@type": "ItemList",
+        "name": "Discovered Vulnerabilities by Andrew Orr",
+        "description": "CVE disclosures and vulnerability discoveries.",
+        "url": "https://andreworr.ca/vulnerabilities.html",
+        "itemListElement": [
+          {
+            "@type": "ListItem",
+            "position": 1,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Cisco SPA100 Series ATAs - 18 Vulnerabilities",
+              "description": "18 vulnerabilities in Cisco SPA100 Series Analog Telephone Adapters (ATAs) including remote code execution, authentication bypass, XSS, and arbitrary file disclosure.",
+              "author": { "@id": "https://andreworr.ca/#person" },
+              "url": "https://www.tenable.com/security/research/tra-2019-44"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "ASUSTOR Data Master - 6 Vulnerabilities",
+              "description": "6 vulnerabilities in ASUSTOR NAS devices including file upload RCE, path traversal, account enumeration, and man-in-the-middle XSS.",
+              "author": { "@id": "https://andreworr.ca/#person" },
+              "url": "https://www.tenable.com/security/research/tra-2018-22"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 3,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "IBM Netezza - Local Privilege Escalation",
+              "description": "Local privilege escalation to root via world-writable setuid binary in IBM Netezza Platform Software.",
+              "author": { "@id": "https://andreworr.ca/#person" },
+              "url": "https://www.tenable.com/security/research/tra-2018-13"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Firebird Database - Authenticated Remote Code Execution",
+              "description": "Authenticated RCE via malicious user-defined functions in Firebird database server, achieving SYSTEM-level code execution.",
+              "author": { "@id": "https://andreworr.ca/#person" },
+              "url": "https://www.tenable.com/security/research/tra-2017-36"
+            }
+          }
+        ]
       }
     ]
   }

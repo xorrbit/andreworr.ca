@@ -33,23 +33,45 @@
     "@graph": [
       {
         "@type": "WebSite",
+        "@id": "https://andreworr.ca/#website",
         "name": "andreworr.ca",
         "url": "https://andreworr.ca/",
-        "description": "I break things and build things."
+        "description": "I break things and build things.",
+        "author": { "@id": "https://andreworr.ca/#person" }
       },
       {
         "@type": "ProfilePage",
-        "mainEntity": {
-          "@type": "Person",
-          "name": "Andrew Orr",
-          "url": "https://andreworr.ca/",
-          "jobTitle": "Vulnerability Research & Software Engineering",
-          "description": "I break things and build things.",
-          "sameAs": [
-            "https://github.com/xorrbit",
-            "https://ca.linkedin.com/in/xorrbit"
-          ]
-        }
+        "@id": "https://andreworr.ca/",
+        "isPartOf": { "@id": "https://andreworr.ca/#website" },
+        "mainEntity": { "@id": "https://andreworr.ca/#person" }
+      },
+      {
+        "@type": "Person",
+        "@id": "https://andreworr.ca/#person",
+        "name": "Andrew Orr",
+        "url": "https://andreworr.ca/",
+        "jobTitle": "Staff Vulnerability Research Engineer",
+        "description": "I break things and build things.",
+        "email": "mailto:andrew@andreworr.ca",
+        "worksFor": {
+          "@type": "Organization",
+          "name": "Tenable",
+          "url": "https://www.tenable.com"
+        },
+        "homeLocation": {
+          "@type": "Place",
+          "name": "Winnipeg, Canada"
+        },
+        "knowsAbout": [
+          "Vulnerability Research",
+          "Exploit Development",
+          "Software Engineering",
+          "Network Security"
+        ],
+        "sameAs": [
+          "https://github.com/xorrbit",
+          "https://ca.linkedin.com/in/xorrbit"
+        ]
       }
     ]
   }
