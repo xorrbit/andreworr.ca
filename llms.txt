@@ -10,7 +10,7 @@
 
 ## Security & Community
 
-- [Tenable - Staff Vulnerability Research Engineer](https://www.tenable.com/research): Vulnerability research and exploit development since 2013
+- [Tenable - Staff Vulnerability Research Engineer](https://www.tenable.com/research): Vulnerability research since 2013
 - [SkullSpace - Hackerspace Founder](https://skullspace.ca): Founded Winnipeg's first hackerspace
 - [Nmap: the Network Mapper](https://nmap.org): DOUBLEPULSAR detection, Intel AMT auth bypass, Misfortune Cookie, afp-serverinfo, bitcoin.lua
 - [Burp Suite - SendToCyberChef](https://github.com/xorrbit/Burp-SendToCyberChef): Burp extension to send selections to CyberChef
