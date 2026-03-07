@@ -20,6 +20,7 @@
 
 - [Claude Did What?!](https://github.com/xorrbit/claudedidwhat): Terminal with built-in live diff viewer for AI coding agents (TypeScript)
 - Callout Alert: React Native alarm app for volunteer firefighters and SAR responders (TypeScript)
+- [Pass the Basic](https://www.passthebasic.ca/): Study app for the Canadian Amateur Radio Basic Exam with spaced repetition and all 984 official questions (TypeScript)
 - PlumbWildVulns: CVE prioritization dashboard combining CISA KEV, CVSS, and custom watchlists (TypeScript)
 - [andreworr.ca](https://github.com/xorrbit/andreworr.ca): This site (HTML, CSS, JS)
 
