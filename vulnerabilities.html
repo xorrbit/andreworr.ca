@@ -66,6 +66,17 @@
             "position": 1,
             "item": {
               "@type": "CreativeWork",
+              "name": "Spring AI - SQL Injection in Vector Stores",
+              "description": "SQL injection in Spring AI vector store implementations (PgVectorStore, OracleVectorStore, CouchbaseSearchVectorStore) via unsafe filter expression concatenation.",
+              "author": { "@id": "https://andreworr.ca/#person" },
+              "url": "https://www.tenable.com/security/research/tra-2026-36"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 2,
+            "item": {
+              "@type": "CreativeWork",
               "name": "Cisco SPA100 Series ATAs - 18 Vulnerabilities",
               "description": "18 vulnerabilities in Cisco SPA100 Series Analog Telephone Adapters (ATAs) including remote code execution, authentication bypass, XSS, and arbitrary file disclosure.",
               "author": { "@id": "https://andreworr.ca/#person" },
@@ -74,7 +85,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 2,
+            "position": 3,
             "item": {
               "@type": "CreativeWork",
               "name": "ASUSTOR Data Master - 6 Vulnerabilities",
@@ -85,7 +96,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 3,
+            "position": 4,
             "item": {
               "@type": "CreativeWork",
               "name": "IBM Netezza - Local Privilege Escalation",
@@ -96,7 +107,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 4,
+            "position": 5,
             "item": {
               "@type": "CreativeWork",
               "name": "Firebird Database - Authenticated Remote Code Execution",
@@ -155,6 +166,22 @@
       <section class="projects">
         <div class="container">
           <div class="project-list">
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h2 class="project-card__title">
+                  <a href="https://www.tenable.com/security/research/tra-2026-36" target="_blank" rel="noopener noreferrer">Spring AI - SQL Injection in Vector Stores</a>
+                </h2>
+              </div>
+              <p class="project-card__desc">
+                SQL injection in Spring AI's vector store implementations, where filter
+                expression output was concatenated directly into SQL statements without
+                parameterization. Affected PgVectorStore, OracleVectorStore, and
+                CouchbaseSearchVectorStore, allowing attackers to bypass tenant isolation,
+                exfiltrate data, and delete arbitrary records. Fixed in Spring AI 1.0.6
+                and 1.1.5. CVE-2026-40967.
+              </p>
+            </article>
 
             <article class="project-card">
               <div class="project-card__top">
