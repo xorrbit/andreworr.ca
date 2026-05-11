@@ -488,14 +488,21 @@ img {
   padding-top: 0.15rem;
 }
 
+.project-card__ids {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.2rem;
+  flex-shrink: 0;
+  position: relative;
+  z-index: 1;
+}
+
 .project-card__id {
   font-family: var(--font-mono);
   font-size: 0.8125rem;
   color: var(--accent);
   white-space: nowrap;
-  padding-top: 0.15rem;
-  position: relative;
-  z-index: 1;
 }
 
 .project-card--no-link {
