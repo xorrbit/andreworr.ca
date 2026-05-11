@@ -489,21 +489,13 @@ img {
 }
 
 .project-card__ids {
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  color: var(--accent);
   margin-top: -0.1rem;
   margin-bottom: 0.6rem;
   position: relative;
   z-index: 1;
-}
-
-.project-card__id {
-  font-family: var(--font-mono);
-  font-size: 0.8125rem;
-  color: var(--accent);
-  white-space: nowrap;
-}
-
-.project-card__id + .project-card__id::before {
-  content: ", ";
 }
 
 .project-card--no-link {
