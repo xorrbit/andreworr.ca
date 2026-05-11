@@ -26,6 +26,8 @@
 
 ## Discovered Vulnerabilities
 
+- [Open WebUI - IDOR in Retrieval API Bypasses Knowledge Base Access Controls](https://github.com/open-webui/open-webui/security/advisories/GHSA-4g37-7p2c-38r9): Missing access check on knowledge base UUID collections lets any authenticated user read, inject into, or destroy another user's private knowledge base (GHSA-4g37-7p2c-38r9)
+- [Open WebUI - SSRF Bypass via HTTP Redirect Following](https://github.com/open-webui/open-webui/security/advisories/GHSA-rh5x-h6pp-cjj6): validate_url() checked only the initial URL; downstream HTTP clients followed 3xx redirects without re-validation, exposing internal services via web-fetch, image-load, and chat-completion endpoints (GHSA-rh5x-h6pp-cjj6)
 - [Spring AI - SQL Injection in Vector Stores](https://www.tenable.com/security/research/tra-2026-36): SQL injection in PgVectorStore, OracleVectorStore, and CouchbaseSearchVectorStore via unsafe filter expression concatenation (CVE-2026-40967)
 - [Cisco SPA100 Series ATAs - 18 Vulnerabilities](https://www.tenable.com/security/research/tra-2019-44): RCE, auth bypass, XSS, file disclosure in Cisco SPA100 Series Analog Telephone Adapters (CVE-2019-15240 through CVE-2019-15258)
 - [ASUSTOR Data Master - 6 Vulnerabilities](https://www.tenable.com/security/research/tra-2018-22): RCE, path traversal, account enumeration, XSS (CVE-2018-15694 through CVE-2018-15699)
