@@ -194,6 +194,7 @@
                 <h2 class="project-card__title">
                   <a href="https://github.com/open-webui/open-webui/security/advisories/GHSA-4g37-7p2c-38r9" target="_blank" rel="noopener noreferrer">Open WebUI - IDOR in Retrieval API Bypasses Knowledge Base Access Controls</a>
                 </h2>
+                <span class="project-card__id">GHSA-4g37-7p2c-38r9</span>
               </div>
               <p class="project-card__desc">
                 IDOR in Open WebUI's retrieval API where <code>_validate_collection_access()</code>
@@ -202,7 +203,6 @@
                 authenticated user who knew a private knowledge base UUID could read its
                 content, inject attacker-controlled text into it, or destroy and replace it
                 entirely via the web and YouTube ingest endpoints. Fixed in Open WebUI 0.9.5.
-                GHSA-4g37-7p2c-38r9.
               </p>
             </article>
 
@@ -211,6 +211,7 @@
                 <h2 class="project-card__title">
                   <a href="https://github.com/open-webui/open-webui/security/advisories/GHSA-rh5x-h6pp-cjj6" target="_blank" rel="noopener noreferrer">Open WebUI - SSRF Bypass via HTTP Redirect Following</a>
                 </h2>
+                <span class="project-card__id">GHSA-rh5x-h6pp-cjj6</span>
               </div>
               <p class="project-card__desc">
                 SSRF bypass in Open WebUI where <code>validate_url()</code> checked only the
@@ -220,7 +221,7 @@
                 a public URL that redirected to an internal address — including cloud metadata
                 endpoints and localhost-bound services — and read the response through the
                 web-fetch, image-load, and chat-completion image-inlining endpoints. Fixed in
-                Open WebUI 0.9.5. GHSA-rh5x-h6pp-cjj6.
+                Open WebUI 0.9.5.
               </p>
             </article>
 
@@ -229,6 +230,7 @@
                 <h2 class="project-card__title">
                   <a href="https://www.tenable.com/security/research/tra-2026-36" target="_blank" rel="noopener noreferrer">Spring AI - SQL Injection in Vector Stores</a>
                 </h2>
+                <span class="project-card__id">CVE-2026-40967</span>
               </div>
               <p class="project-card__desc">
                 SQL injection in Spring AI's vector store implementations, where filter
@@ -236,7 +238,7 @@
                 parameterization. Affected PgVectorStore, OracleVectorStore, and
                 CouchbaseSearchVectorStore, allowing attackers to bypass tenant isolation,
                 exfiltrate data, and delete arbitrary records. Fixed in Spring AI 1.0.6
-                and 1.1.5. CVE-2026-40967.
+                and 1.1.5.
               </p>
             </article>
 
@@ -245,12 +247,13 @@
                 <h2 class="project-card__title">
                   <a href="https://www.tenable.com/security/research/tra-2019-44" target="_blank" rel="noopener noreferrer">Cisco SPA100 Series ATAs - 18 Vulnerabilities</a>
                 </h2>
+                <span class="project-card__id">CVE-2019-15240–15258</span>
               </div>
               <p class="project-card__desc">
                 Discovered 18 vulnerabilities in Cisco SPA100 Series Analog Telephone Adapters (ATAs) including multiple
                 stack and heap buffer overflows for remote code execution, admin password
                 hash extraction, plaintext credential leakage, stored and reflected XSS,
-                and arbitrary file disclosure. CVE-2019-15240 through CVE-2019-15258.
+                and arbitrary file disclosure.
                 Co-researched with <a href="https://broot.ca" target="_blank" rel="noopener noreferrer">Alex Weber</a>.
               </p>
             </article>
@@ -260,13 +263,13 @@
                 <h2 class="project-card__title">
                   <a href="https://www.tenable.com/security/research/tra-2018-22" target="_blank" rel="noopener noreferrer">ASUSTOR Data Master - 6 Vulnerabilities</a>
                 </h2>
+                <span class="project-card__id">CVE-2018-15694–15699</span>
               </div>
               <p class="project-card__desc">
                 Found 6 vulnerabilities in ASUSTOR NAS devices running ADM 3.1.5 and below.
                 Authenticated file upload leading to remote code execution, arbitrary file
                 deletion via path traversal, account enumeration, file disclosure for both
                 user and admin roles, and a man-in-the-middle XSS via update checks.
-                CVE-2018-15694 through CVE-2018-15699.
               </p>
             </article>
 
@@ -275,12 +278,12 @@
                 <h2 class="project-card__title">
                   <a href="https://www.tenable.com/security/research/tra-2018-13" target="_blank" rel="noopener noreferrer">IBM Netezza - Local Privilege Escalation</a>
                 </h2>
+                <span class="project-card__id">CVE-2018-1460</span>
               </div>
               <p class="project-card__desc">
                 Local privilege escalation to root in IBM Netezza Platform Software.
                 A setuid root binary executed a Perl script from a world-writable directory,
                 allowing unprivileged users to inject code and gain root access.
-                CVE-2018-1460.
               </p>
             </article>
 
@@ -289,12 +292,12 @@
                 <h2 class="project-card__title">
                   <a href="https://www.tenable.com/security/research/tra-2017-36" target="_blank" rel="noopener noreferrer">Firebird Database - Authenticated Remote Code Execution</a>
                 </h2>
+                <span class="project-card__id">CVE-2017-11509</span>
               </div>
               <p class="project-card__desc">
                 Authenticated RCE in Firebird database server. By declaring external
                 user-defined functions with incompatible parameter types, an attacker could
                 overwrite function pointers and achieve SYSTEM-level code execution.
-                CVE-2017-11509.
               </p>
             </article>
 
