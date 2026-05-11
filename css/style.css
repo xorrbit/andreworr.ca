@@ -494,8 +494,6 @@ img {
   color: var(--accent);
   margin-top: -0.1rem;
   margin-bottom: 0.6rem;
-  position: relative;
-  z-index: 1;
 }
 
 .project-card--no-link {
