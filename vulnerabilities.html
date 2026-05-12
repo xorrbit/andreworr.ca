@@ -67,7 +67,7 @@
             "item": {
               "@type": "CreativeWork",
               "name": "Open WebUI - IDOR in Retrieval API Bypasses Knowledge Base Access Controls",
-              "description": "IDOR in Open WebUI's retrieval API allowed any authenticated user to read, inject content into, or destroy another user's private knowledge base by supplying the target's UUID as the collection_name parameter. Fixed in Open WebUI 0.9.5. GHSA-4g37-7p2c-38r9.",
+              "description": "IDOR in Open WebUI's retrieval API allowed any authenticated user to read, inject content into, or destroy another user's private knowledge base by supplying the target's UUID as the collection_name parameter. Fixed in Open WebUI 0.9.5. CVE-2026-45398, GHSA-4g37-7p2c-38r9.",
               "author": { "@id": "https://andreworr.ca/#person" },
               "url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-4g37-7p2c-38r9"
             }
@@ -78,7 +78,7 @@
             "item": {
               "@type": "CreativeWork",
               "name": "Open WebUI - SSRF Bypass via HTTP Redirect Following",
-              "description": "SSRF bypass in Open WebUI where validate_url() only checked the initial URL but downstream HTTP clients followed 3xx redirects without re-validation, letting any authenticated user read internal services via web-fetch, image-load, and chat-completion endpoints. Fixed in Open WebUI 0.9.5. GHSA-rh5x-h6pp-cjj6.",
+              "description": "SSRF bypass in Open WebUI where validate_url() only checked the initial URL but downstream HTTP clients followed 3xx redirects without re-validation, letting any authenticated user read internal services via web-fetch, image-load, and chat-completion endpoints. Fixed in Open WebUI 0.9.5. CVE-2026-45401, GHSA-rh5x-h6pp-cjj6.",
               "author": { "@id": "https://andreworr.ca/#person" },
               "url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-rh5x-h6pp-cjj6"
             }
@@ -195,7 +195,7 @@
                   <a href="https://github.com/open-webui/open-webui/security/advisories/GHSA-4g37-7p2c-38r9" target="_blank" rel="noopener noreferrer">Open WebUI - IDOR in Retrieval API Bypasses Knowledge Base Access Controls</a>
                 </h2>
               </div>
-              <div class="project-card__ids">GHSA-4g37-7p2c-38r9</div>
+              <div class="project-card__ids">CVE-2026-45398, GHSA-4g37-7p2c-38r9</div>
               <p class="project-card__desc">
                 IDOR in Open WebUI's retrieval API where <code>_validate_collection_access()</code>
                 only checked <code>user-memory-*</code> and <code>file-*</code> collection name
@@ -212,7 +212,7 @@
                   <a href="https://github.com/open-webui/open-webui/security/advisories/GHSA-rh5x-h6pp-cjj6" target="_blank" rel="noopener noreferrer">Open WebUI - SSRF Bypass via HTTP Redirect Following</a>
                 </h2>
               </div>
-              <div class="project-card__ids">GHSA-rh5x-h6pp-cjj6</div>
+              <div class="project-card__ids">CVE-2026-45401, GHSA-rh5x-h6pp-cjj6</div>
               <p class="project-card__desc">
                 SSRF bypass in Open WebUI where <code>validate_url()</code> checked only the
                 initial URL but the downstream HTTP clients (sync <code>requests</code>, async
