@@ -66,10 +66,10 @@
             "position": 1,
             "item": {
               "@type": "CreativeWork",
-              "name": "Open WebUI - IDOR in Retrieval API Bypasses Knowledge Base Access Controls",
-              "description": "IDOR in Open WebUI's retrieval API allowed any authenticated user to read, inject content into, or destroy another user's private knowledge base by supplying the target's UUID as the collection_name parameter. Fixed in Open WebUI 0.9.5. CVE-2026-45398.",
+              "name": "Microsoft Foundry Toolkit for VS Code - Command Injection via Python Interpreter Path",
+              "description": "Command injection in the Microsoft Foundry Toolkit VS Code extension where child_process.exec() interpolated an unsanitized Python interpreter path into a shell command. On Linux/macOS, double-quoting the path enabled command substitution, allowing arbitrary code execution when opening a malicious repository. Fixed in version 0.32.0.",
               "author": { "@id": "https://andreworr.ca/#person" },
-              "url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-4g37-7p2c-38r9"
+              "url": "https://www.tenable.com/security/research/tra-2026-40"
             }
           },
           {
@@ -77,15 +77,26 @@
             "position": 2,
             "item": {
               "@type": "CreativeWork",
-              "name": "Open WebUI - SSRF Bypass via HTTP Redirect Following",
-              "description": "SSRF bypass in Open WebUI where validate_url() only checked the initial URL but downstream HTTP clients followed 3xx redirects without re-validation, letting any authenticated user read internal services via web-fetch, image-load, and chat-completion endpoints. Fixed in Open WebUI 0.9.5. CVE-2026-45401.",
+              "name": "Open WebUI - IDOR in Retrieval API Bypasses Knowledge Base Access Controls",
+              "description": "IDOR in Open WebUI's retrieval API allowed any authenticated user to read, inject content into, or destroy another user's private knowledge base by supplying the target's UUID as the collection_name parameter. Fixed in Open WebUI 0.9.5. CVE-2026-45398.",
               "author": { "@id": "https://andreworr.ca/#person" },
-              "url": "https://github.com/open-webui/open-webui/security/advisories/GHSA-rh5x-h6pp-cjj6"
+              "url": "https://www.tenable.com/security/research/tra-2026-39"
             }
           },
           {
             "@type": "ListItem",
             "position": 3,
+            "item": {
+              "@type": "CreativeWork",
+              "name": "Open WebUI - SSRF Bypass via HTTP Redirect Following",
+              "description": "SSRF bypass in Open WebUI where validate_url() only checked the initial URL but downstream HTTP clients followed 3xx redirects without re-validation, letting any authenticated user read internal services via web-fetch, image-load, and chat-completion endpoints. Fixed in Open WebUI 0.9.5. CVE-2026-45401.",
+              "author": { "@id": "https://andreworr.ca/#person" },
+              "url": "https://www.tenable.com/security/research/tra-2026-39"
+            }
+          },
+          {
+            "@type": "ListItem",
+            "position": 4,
             "item": {
               "@type": "CreativeWork",
               "name": "Spring AI - SQL Injection in Vector Stores",
@@ -96,7 +107,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 4,
+            "position": 5,
             "item": {
               "@type": "CreativeWork",
               "name": "Cisco SPA100 Series ATAs - 18 Vulnerabilities",
@@ -107,7 +118,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 5,
+            "position": 6,
             "item": {
               "@type": "CreativeWork",
               "name": "ASUSTOR Data Master - 6 Vulnerabilities",
@@ -118,7 +129,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 6,
+            "position": 7,
             "item": {
               "@type": "CreativeWork",
               "name": "IBM Netezza - Local Privilege Escalation",
@@ -129,7 +140,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 7,
+            "position": 8,
             "item": {
               "@type": "CreativeWork",
               "name": "Firebird Database - Authenticated Remote Code Execution",
@@ -192,7 +203,26 @@
             <article class="project-card">
               <div class="project-card__top">
                 <h2 class="project-card__title">
-                  <a href="https://github.com/open-webui/open-webui/security/advisories/GHSA-4g37-7p2c-38r9" target="_blank" rel="noopener noreferrer">Open WebUI - IDOR in Retrieval API Bypasses Knowledge Base Access Controls</a>
+                  <a href="https://www.tenable.com/security/research/tra-2026-40" target="_blank" rel="noopener noreferrer">Microsoft Foundry Toolkit for VS Code - Command Injection via Python Interpreter Path</a>
+                </h2>
+              </div>
+              <div class="project-card__ids">TRA-2026-40</div>
+              <p class="project-card__desc">
+                Command injection in the Microsoft Foundry Toolkit VS Code extension (formerly
+                AI Toolkit) where <code>child_process.exec()</code> interpolated an attacker-controlled
+                Python interpreter path — sourced from <code>python.defaultInterpreterPath</code> in
+                workspace settings — directly into a shell command string. On Linux/macOS,
+                double-quoting the path enabled POSIX command substitution, allowing arbitrary
+                code execution when a developer opened a malicious repository. No CVE was
+                assigned; Microsoft cited automatic extension updates and limited user impact.
+                Fixed in version 0.32.0.
+              </p>
+            </article>
+
+            <article class="project-card">
+              <div class="project-card__top">
+                <h2 class="project-card__title">
+                  <a href="https://www.tenable.com/security/research/tra-2026-39" target="_blank" rel="noopener noreferrer">Open WebUI - IDOR in Retrieval API Bypasses Knowledge Base Access Controls</a>
                 </h2>
               </div>
               <div class="project-card__ids">CVE-2026-45398</div>
@@ -209,7 +239,7 @@
             <article class="project-card">
               <div class="project-card__top">
                 <h2 class="project-card__title">
-                  <a href="https://github.com/open-webui/open-webui/security/advisories/GHSA-rh5x-h6pp-cjj6" target="_blank" rel="noopener noreferrer">Open WebUI - SSRF Bypass via HTTP Redirect Following</a>
+                  <a href="https://www.tenable.com/security/research/tra-2026-39" target="_blank" rel="noopener noreferrer">Open WebUI - SSRF Bypass via HTTP Redirect Following</a>
                 </h2>
               </div>
               <div class="project-card__ids">CVE-2026-45401</div>
