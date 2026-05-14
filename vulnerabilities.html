@@ -77,8 +77,8 @@
             "position": 2,
             "item": {
               "@type": "CreativeWork",
-              "name": "Open WebUI - IDOR in Retrieval API Bypasses Knowledge Base Access Controls",
-              "description": "IDOR in Open WebUI's retrieval API allowed any authenticated user to read, inject content into, or destroy another user's private knowledge base by supplying the target's UUID as the collection_name parameter. Fixed in Open WebUI 0.9.5. CVE-2026-45398.",
+              "name": "Open WebUI - 2 Vulnerabilities",
+              "description": "IDOR in Open WebUI's retrieval API left knowledge base UUID collections unguarded, allowing any authenticated user to read, corrupt, or destroy another user's private knowledge base (CVE-2026-45398). SSRF bypass via unvalidated HTTP redirects let authenticated users reach internal services through the web-fetch, image-load, and chat-completion endpoints (CVE-2026-45401). Both fixed in Open WebUI 0.9.5.",
               "author": { "@id": "https://andreworr.ca/#person" },
               "url": "https://www.tenable.com/security/research/tra-2026-39"
             }
@@ -86,17 +86,6 @@
           {
             "@type": "ListItem",
             "position": 3,
-            "item": {
-              "@type": "CreativeWork",
-              "name": "Open WebUI - SSRF Bypass via HTTP Redirect Following",
-              "description": "SSRF bypass in Open WebUI where validate_url() only checked the initial URL but downstream HTTP clients followed 3xx redirects without re-validation, letting any authenticated user read internal services via web-fetch, image-load, and chat-completion endpoints. Fixed in Open WebUI 0.9.5. CVE-2026-45401.",
-              "author": { "@id": "https://andreworr.ca/#person" },
-              "url": "https://www.tenable.com/security/research/tra-2026-39"
-            }
-          },
-          {
-            "@type": "ListItem",
-            "position": 4,
             "item": {
               "@type": "CreativeWork",
               "name": "Spring AI - SQL Injection in Vector Stores",
@@ -107,7 +96,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 5,
+            "position": 4,
             "item": {
               "@type": "CreativeWork",
               "name": "Cisco SPA100 Series ATAs - 18 Vulnerabilities",
@@ -118,7 +107,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 6,
+            "position": 5,
             "item": {
               "@type": "CreativeWork",
               "name": "ASUSTOR Data Master - 6 Vulnerabilities",
@@ -129,7 +118,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 7,
+            "position": 6,
             "item": {
               "@type": "CreativeWork",
               "name": "IBM Netezza - Local Privilege Escalation",
@@ -140,7 +129,7 @@
           },
           {
             "@type": "ListItem",
-            "position": 8,
+            "position": 7,
             "item": {
               "@type": "CreativeWork",
               "name": "Firebird Database - Authenticated Remote Code Execution",
@@ -222,37 +211,23 @@
             <article class="project-card">
               <div class="project-card__top">
                 <h2 class="project-card__title">
-                  <a href="https://www.tenable.com/security/research/tra-2026-39" target="_blank" rel="noopener noreferrer">Open WebUI - IDOR in Retrieval API Bypasses Knowledge Base Access Controls</a>
+                  <a href="https://www.tenable.com/security/research/tra-2026-39" target="_blank" rel="noopener noreferrer">Open WebUI - 2 Vulnerabilities</a>
                 </h2>
               </div>
-              <div class="project-card__ids">CVE-2026-45398</div>
+              <div class="project-card__ids">CVE-2026-45398, CVE-2026-45401</div>
               <p class="project-card__desc">
-                IDOR in Open WebUI's retrieval API where <code>_validate_collection_access()</code>
-                only checked <code>user-memory-*</code> and <code>file-*</code> collection name
-                prefixes, leaving knowledge base UUID collections entirely unguarded. Any
-                authenticated user who knew a private knowledge base UUID could read its
-                content, inject attacker-controlled text into it, or destroy and replace it
-                entirely via the web and YouTube ingest endpoints. Fixed in Open WebUI 0.9.5.
+                <strong>IDOR in Retrieval API (CVE-2026-45398):</strong> <code>_validate_collection_access()</code>
+                only checked <code>user-memory-*</code> and <code>file-*</code> prefixes, leaving
+                knowledge base UUID collections unguarded — any authenticated user could read,
+                corrupt, or destroy another user's private knowledge base.
               </p>
-            </article>
-
-            <article class="project-card">
-              <div class="project-card__top">
-                <h2 class="project-card__title">
-                  <a href="https://www.tenable.com/security/research/tra-2026-39" target="_blank" rel="noopener noreferrer">Open WebUI - SSRF Bypass via HTTP Redirect Following</a>
-                </h2>
-              </div>
-              <div class="project-card__ids">CVE-2026-45401</div>
               <p class="project-card__desc">
-                SSRF bypass in Open WebUI where <code>validate_url()</code> checked only the
-                initial URL but the downstream HTTP clients (sync <code>requests</code>, async
-                <code>aiohttp</code>, and langchain's <code>WebBaseLoader</code>) followed 3xx
-                redirects without re-validating the target. Any authenticated user could supply
-                a public URL that redirected to an internal address — including cloud metadata
-                endpoints and localhost-bound services — and read the response through the
-                web-fetch, image-load, and chat-completion image-inlining endpoints. Fixed in
-                Open WebUI 0.9.5.
+                <strong>SSRF via HTTP Redirect Following (CVE-2026-45401):</strong> <code>validate_url()</code>
+                checked only the initial URL but downstream HTTP clients followed 3xx redirects
+                without re-validation, allowing any authenticated user to reach internal services
+                via the web-fetch, image-load, and chat-completion endpoints.
               </p>
+              <p class="project-card__desc">Both fixed in Open WebUI 0.9.5.</p>
             </article>
 
             <article class="project-card">
